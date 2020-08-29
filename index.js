@@ -27,7 +27,9 @@ $(document).ready(() => {
     //console.log(searchString)
     let urlEncodedSearchString = encodeURIComponent(searchString);
 
-    fetch(`http://www.omdbapi.com/?apikey=8534d2a7&s=${urlEncodedSearchString}`)
+    fetch(
+      `https://www.omdbapi.com/?apikey=8534d2a7&s=${urlEncodedSearchString}`
+    )
       .then((response) => response.json())
       .then((response) => {
         //console.log(response);
@@ -38,7 +40,7 @@ $(document).ready(() => {
 });
 
 function saveToWatchlist(imdbID) {
-  fetch(`http://www.omdbapi.com/?apikey=8534d2a7&i=${imdbID}`)
+  fetch(`https://www.omdbapi.com/?apikey=8534d2a7&i=${imdbID}`)
     .then((response) => response.json())
     .then((response) => {
       let watchlistJSON = localStorage.getItem("watchlist");
