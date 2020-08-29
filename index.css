@@ -1,16 +1,31 @@
 body {
-	background-color: #B2E9FD;
+  background-color: #b2e9fd;
 }
 
 .header h2 {
-	color: #DC4247;
+  color: #dc4247;
 }
 
 .header p {
-	color: #50524F;
+  color: #50524f;
 }
 
 .results {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
+
+.movie {
+  padding: 10px;
+  margin: 10px;
+}
+
+.watchlist-remove-btn {
+  color: white;
+}
